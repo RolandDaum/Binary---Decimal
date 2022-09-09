@@ -27,14 +27,12 @@ while True:                                                             #Run the
 
     if user_input == ("DB"):                                            #If DB, Check DB input_dec is an int, convert dec to bin
         while True:
-            input_dec = int(input("Decimal number: "))
             try:
-                int(input_dec)
+                input_dec = int(input("Decimal number: "))
                 break
             except ValueError:
                 print("Please enter a valid decimal number: ")
                 continue
-        
 
         def output_bin(input_dec):
             return bin(input_dec).replace("0b", "")
